@@ -354,24 +354,3 @@ template {
 /**
  * Add the correct display in IE 10+.
  */
-
- ol,
- ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
- }
-
- /* Eddy's code
-    ========================================================================== */
-
- /**
-  * This is section that edited by Eddy.
-  */
-
- h1 {
-   margin: 0;
- }
- p {
-   margin: 0;
- }
