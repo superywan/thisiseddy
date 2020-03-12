@@ -17,8 +17,11 @@ h1 {
   class
 ==================================== */
 .section-topcover {
-  background-image: url("../img/samplephoto.jpg");
+  background-image: url("../img/maincover.jpg");
+  background-color: #ffffff;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .name a {
@@ -48,8 +51,7 @@ h1 {
   margin-bottom: 100px;
 }
 
-.arrow {
-  margin-top: 100px;
+.arrow { 
   width: 50px;
 }
 
@@ -95,6 +97,22 @@ h1 {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+.myphoto-content {
+  margin: 240px auto 0 auto;
+}
+
+.love-content {
+  margin: 130px auto 0 auto;
+}
+
+.skills-content {
+  margin: 140px auto 0 auto;
+}
+
+.contact-content {
+  margin: 150px auto 0 auto;
 }
 
 /* =================================
