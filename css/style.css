@@ -1,30 +1,116 @@
-/*------- Global Variable --------*/
+/*--------------- Global Variable ----------------*/
 * {
   font-family: neue-haas-grotesk-display, sans-serif;
 }
 
+/*--------------- test ----------------*/
 
-/*------- Layout --------*/
+section {
+  border: 1px solid red;
+}
+
+/*--------------- Layout ----------------*/
 body {
   display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+#sideNAV {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #mainNAV {
   display: flex;
+  justify-content: space-between;
 }
 
+#mainNavImgs {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* COVER */
+#coverDIV {
+  text-align: center;
+}
+
+/* INTRO */
+#introduceSEC {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* PHOTO */
 #photoSEC {
   display: flex;
+  flex-direction: row-reverse;
 }
 
+#photoH2s {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#profilePhotoIMG {
+  align-self: center;
+}
+
+/* HOBBY */
 #hobbySEC {
   display: flex;
 }
 
+#hobbyH2s {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#hobbyPs {
+  align-self: center;
+}
+
+/* SKILL */
 #skillSEC {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#skillH2s {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#skillShowcase {
+  display: none;
+}
+
+#skillListDIV {
+  align-self: center;
+}
+
+/* CONTACT */
+#contactSEC {
   display: flex;
 }
 
-#contactSEC {
+#contactH2s {
   display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#contactPs {
+  align-self: center;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
 }
