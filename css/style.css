@@ -9,14 +9,52 @@ section {
   border: 1px solid red;
 }
 
+/*--------------- font ----------------*/
+h1 {
+  font-size: 18em;
+}
+h2 {
+  font-size: 9em;
+}
+img {
+  color: #ffffff;
+  text-decoration: none;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 /*--------------- Layout ----------------*/
 body {
   display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+/* HUNDRED DIV */
+#coverDIV {
+  height: 1000px;
+  text-align: center;
+}
+
+/* NOT HUNDRED DIV */
+#mainDIV section {
+  height: 1200px;
+}
+
+#not-hundredDIV {
+  display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
+}
+
+#mainDIV {
+  width: 95%;
 }
 
 #sideNAV {
+  width: 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,16 +70,15 @@ body {
   justify-content: space-between;
 }
 
-/* COVER */
-#coverDIV {
-  text-align: center;
-}
-
 /* INTRO */
 #introduceSEC {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+
+#introduceSEC h2 {
+  margin: 0;
 }
 
 /* PHOTO */
@@ -51,9 +88,14 @@ body {
 }
 
 #photoH2s {
+  width: -30%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+
+#photoH2s h2 {
+  margin: 0;
 }
 
 #profilePhotoIMG {
@@ -68,31 +110,46 @@ body {
 #hobbyH2s {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  width: 30%;
+}
+
+#hobbyH2s h2 {
+  margin: 0;
 }
 
 #hobbyPs {
+  width: 70%;
   align-self: center;
 }
 
 /* SKILL */
 #skillSEC {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row-reverse;
+  justify-content: flex;
+}
+
+#skillRightSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #skillH2s {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
-#skillShowcase {
-  display: none;
+#skillH2s h2 {
+  margin: 0;
 }
 
 #skillListDIV {
-  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* CONTACT */
@@ -103,7 +160,10 @@ body {
 #contactH2s {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+#contactH2s h2 {
+  margin: 0;
 }
 
 #contactPs {
