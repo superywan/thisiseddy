@@ -3,12 +3,6 @@
   font-family: neue-haas-grotesk-display, sans-serif;
 }
 
-/*--------------- test ----------------*/
-
-section {
-  border: 1px solid red;
-}
-
 /*--------------- font ----------------*/
 h1 {
   font-size: 18em;
@@ -29,45 +23,70 @@ a {
 body {
   display: flex;
   flex-direction: column;
+  overscroll-behavior: none;
   color: #ffffff;
   background-color: #000000;
 }
 
 /* HUNDRED DIV */
+#hundredDIV {
+  background-image: url("../img/mainCover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#mainNAV {
+  display: flex;
+  justify-content: space-between;
+}
+#mainNavA {
+  margin: 5px 0 0 10px;
+  color: #8a8a8a;
+  font-size: 20px;
+}
+#mainNavImgs {
+  display: flex;
+  justify-content: space-between;
+}
+#mainNavImgs img {
+  margin-top: 5px;
+}
+.githubIMG {
+  width: 30px;
+  margin-right: 15px;
+}
+.instaIMG {
+  width: 30px;
+  margin-right: 10px;
+}
+
 #coverDIV {
   height: 1000px;
   text-align: center;
+}
+#downArrowIMG {
+  width: 40px;
+  position: relative;
+  animation-name: ArrowAnimation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
 }
 
 /* NOT HUNDRED DIV */
 #mainDIV section {
   height: 1200px;
 }
-
 #not-hundredDIV {
   display: flex;
   flex-direction: row-reverse;
 }
-
 #mainDIV {
   width: 95%;
 }
-
 #sideNAV {
   width: 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-#mainNAV {
-  display: flex;
-  justify-content: space-between;
-}
-
-#mainNavImgs {
-  display: flex;
-  justify-content: space-between;
 }
 
 /* INTRO */
@@ -76,7 +95,6 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-
 #introduceSEC h2 {
   margin: 0;
 }
@@ -86,18 +104,15 @@ body {
   display: flex;
   flex-direction: row-reverse;
 }
-
 #photoH2s {
   width: -30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 #photoH2s h2 {
   margin: 0;
 }
-
 #profilePhotoIMG {
   align-self: center;
 }
@@ -106,18 +121,15 @@ body {
 #hobbySEC {
   display: flex;
 }
-
 #hobbyH2s {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 30%;
 }
-
 #hobbyH2s h2 {
   margin: 0;
 }
-
 #hobbyPs {
   width: 70%;
   align-self: center;
@@ -129,23 +141,19 @@ body {
   flex-direction: row-reverse;
   justify-content: flex;
 }
-
 #skillRightSide {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 #skillH2s {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 #skillH2s h2 {
   margin: 0;
 }
-
 #skillListDIV {
   display: flex;
   flex-direction: column;
@@ -156,21 +164,32 @@ body {
 #contactSEC {
   display: flex;
 }
-
 #contactH2s {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 30%;
 }
 #contactH2s h2 {
   margin: 0;
 }
-
 #contactPs {
+  width: 70%;
   align-self: center;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
+}
+
+/* The animation code */
+@keyframes ArrowAnimation {
+  0% {
+    top: 0px;
+  }
+  100% {
+    opacity: 0;
+    top: 100px;
+  }
 }
