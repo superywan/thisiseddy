@@ -40,7 +40,7 @@ body {
 }
 #mainNavA {
   margin: 5px 0 0 10px;
-  color: #8a8a8a;
+  color: #000000;
   font-size: 20px;
 }
 #mainNavImgs {
@@ -69,6 +69,7 @@ body {
   animation-name: ArrowAnimation;
   animation-duration: 2.5s;
   animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
 }
 
 /* NOT HUNDRED DIV */
@@ -96,13 +97,14 @@ body {
   justify-content: center;
 }
 #introduceSEC h2 {
-  margin: 0;
+  margin: -25px 0 -25px 30px;
 }
 
 /* PHOTO */
 #photoSEC {
   display: flex;
   flex-direction: row-reverse;
+  align-items: center;
 }
 #photoH2s {
   width: -30%;
@@ -111,10 +113,12 @@ body {
   justify-content: center;
 }
 #photoH2s h2 {
-  margin: 0;
+  margin: -25px 0 -25px 0;
 }
 #profilePhotoIMG {
-  align-self: center;
+  width: auto;
+  height: 500px;
+  margin-right: 200px;
 }
 
 /* HOBBY */
@@ -128,7 +132,7 @@ body {
   width: 30%;
 }
 #hobbyH2s h2 {
-  margin: 0;
+  margin: -25px 0 -25px 30px;
 }
 #hobbyPs {
   width: 70%;
@@ -152,12 +156,13 @@ body {
   justify-content: center;
 }
 #skillH2s h2 {
-  margin: 0;
+  margin: -25px 0 -25px 0;
 }
 #skillListDIV {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-right: 150px;
 }
 
 /* CONTACT */
@@ -171,18 +176,31 @@ body {
   width: 30%;
 }
 #contactH2s h2 {
-  margin: 0;
+  margin: -25px 0 -25px 30px;
 }
 #contactPs {
   width: 70%;
   align-self: center;
+  margin-left: 150px;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
 }
+#footerDIV {
+  display: flex;
+  justify-content: center;
+}
+#instaSMAL,
+#githubSMAL {
+  margin-right: 15px;
+}
 
+#copyrightP {
+  margin-top: 3px;
+  margin-bottom: 0;
+}
 /* The animation code */
 @keyframes ArrowAnimation {
   0% {
